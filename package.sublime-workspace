@@ -1,0 +1,546 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"ge",
+				"generateRound"
+			],
+			[
+				"min",
+				"minStart"
+			],
+			[
+				"len",
+				"lenght"
+			],
+			[
+				"m",
+				"minRange"
+			],
+			[
+				"get",
+				"getRandomIndex"
+			],
+			[
+				"pro",
+				"progression.js"
+			],
+			[
+				"mi",
+				"minNumber"
+			],
+			[
+				"con",
+				"const"
+			],
+			[
+				"f",
+				"firstNumb"
+			],
+			[
+				"s",
+				"secondNumb"
+			],
+			[
+				"is",
+				"isFinishedGameData"
+			],
+			[
+				"game",
+				"gameDesription"
+			],
+			[
+				"r",
+				"rightAnswer"
+			],
+			[
+				"user",
+				"userAnswer"
+			],
+			[
+				"g",
+				"gameEngine"
+			],
+			[
+				"rou",
+				"roundGame"
+			],
+			[
+				"co",
+				"countW"
+			],
+			[
+				"c",
+				"countW"
+			],
+			[
+				"U",
+				"userName"
+			],
+			[
+				"serv",
+				"service"
+			],
+			[
+				"bacgro",
+				"background-position"
+			],
+			[
+				"ba",
+				"background-repeat"
+			],
+			[
+				"bga",
+				"background-image"
+			],
+			[
+				"backgro",
+				"background-image"
+			],
+			[
+				"bg",
+				"Vector_smart_bg.png"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"lo",
+				"logo_menu.png"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"h",
+				"header.png"
+			],
+			[
+				"st",
+				"style.css"
+			],
+			[
+				"basi",
+				"basic2"
+			],
+			[
+				"padding",
+				"padding"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"img",
+				"image-rendering"
+			],
+			[
+				"9",
+				"9071.png"
+			],
+			[
+				"n",
+				"nth-child"
+			],
+			[
+				"90",
+				"9071.png"
+			],
+			[
+				"in",
+				"inline"
+			],
+			[
+				"dwn_",
+				"dwn_load"
+			],
+			[
+				"a",
+				"align-items"
+			],
+			[
+				"ta",
+				"tabcontent"
+			],
+			[
+				"fea",
+				"image_features.png"
+			],
+			[
+				"transo",
+				"transition"
+			],
+			[
+				"d",
+				"text-decoration"
+			],
+			[
+				"bord",
+				"border"
+			],
+			[
+				"logo",
+				"Logo.png"
+			],
+			[
+				"backgrou",
+				"background"
+			],
+			[
+				"background-",
+				"background-image"
+			],
+			[
+				"b",
+				"background-color"
+			],
+			[
+				"border",
+				"border-bottom"
+			],
+			[
+				"w",
+				"white"
+			],
+			[
+				"padding-",
+				"padding-left"
+			],
+			[
+				"ind",
+				"index_style.css"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"color scheme",
+				"UI: Select Color Scheme"
+			],
+			[
+				"color C",
+				"UI: Customize Color Scheme"
+			],
+			[
+				"Snippet: ",
+				"Snippet: Prototype"
+			],
+			[
+				"olor",
+				"UI: Select Color Scheme"
+			],
+			[
+				"color",
+				"UI: Select Color Scheme"
+			],
+			[
+				"Color",
+				"UI: Select Color Scheme"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Install Package Control"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 426.0,
+		"history":
+		[
+			"cd ../",
+			"asd();",
+			"node -v",
+			"node",
+			"ls",
+			"console.log('asd');",
+			"clear"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/D/project/frontend-project-lvl1/bin/brain-list.js",
+		"/D/project/frontend-project-lvl1/Makefile",
+		"/D/project/frontend-project-lvl1/bin/brain-prime.js",
+		"/D/project/frontend-project-lvl1/bin/brain-progression.js",
+		"/D/project/frontend-project-lvl1/src/games/prime.js",
+		"/C/Users/Абоба/Desktop/g7.js",
+		"/D/project/frontend-project-lvl1/README.md",
+		"/D/project/frontend-project-lvl1/src/games/progression.js",
+		"/D/project/frontend-project-lvl1/bin/brain-gcd.js",
+		"/D/project/frontend-project-lvl1/bin/brain-even.js",
+		"/D/project/frontend-project-lvl1/bin/brain-calc.js",
+		"/D/project/frontend-project-lvl1/src/index.js",
+		"/D/project/frontend-project-lvl1/src/utilites.js",
+		"/D/project/frontend-project-lvl1/src/games/calc.js",
+		"/D/project/frontend-project-lvl1/src/games/even.js",
+		"/D/project/frontend-project-lvl1/src/games/gcd.js",
+		"/D/project/frontend-project-lvl1/bin/brain-games.js",
+		"/D/project/frontend-project-lvl1/package.json",
+		"/D/project/frontend-project-lvl1/.eslintrc.yml",
+		"/D/project/frontend-project-lvl1/src/cli.js",
+		"/C/Users/Абоба/Desktop/asd.js",
+		"/D/project/frontend-project-lvl1/games/prime.js",
+		"/D/project/frontend-project-lvl1/games/calc.js",
+		"/D/project/frontend-project-lvl1/games/even.js",
+		"/D/project/frontend-project-lvl1/games/progression.js",
+		"/D/project/frontend-project-lvl1/games/gcd.js",
+		"/D/project/frontend-project-lvl1/random/randomNumb.js",
+		"/D/project/frontend-project-lvl1/.git/index",
+		"/D/project/frontend-project-lvl111/src/index.js",
+		"/D/frontend-project-lvl1+вникнуть+правки/bin/brain-even.js",
+		"/D/frontend-project-lvl1+вникнуть+правки/games/even.js",
+		"/D/frontend-project-lvl1+вникнуть+правки/src/index.js",
+		"/D/project/frontend-project-lvl1+вникнуть+правки/src/index.js",
+		"/D/project/frontend-project-lvl1+вникнуть+правки/random/randomNumb.js",
+		"/C/Users/Абоба/Desktop/pzdc-2/css/style.css",
+		"/C/Users/Абоба/Desktop/pzdc-2/html/index.html",
+		"/C/Users/Абоба/Desktop/pzdc-2/css/zero.css",
+		"/C/Users/Абоба/Desktop/Новая папка/pzdc/html/index.html",
+		"/C/Users/Абоба/Desktop/Новая папка/pzdc/css/index_style.css",
+		"/C/Users/Абоба/Desktop/pzdc/css/index_style.css",
+		"/C/Users/Абоба/Desktop/pzdc/html/index.html",
+		"/C/Users/Абоба/Desktop/pzdc/css/solid.min.css",
+		"/C/Users/Абоба/Desktop/pzdc/css/zero.css",
+		"/C/Users/Абоба/Desktop/minto/css/index_style.css",
+		"/C/Users/Абоба/Desktop/minto/html/index.html",
+		"/C/Users/Абоба/Desktop/minto/img/logo.png",
+		"/C/Users/Абоба/Desktop/ffr/css/index_style.css",
+		"/C/Users/Абоба/Desktop/ffr/html/index.html",
+		"/C/Users/Абоба/Desktop/wertqdcf/css/zero.css",
+		"/C/Users/Абоба/Desktop/wertqdcf/css/index_style.css",
+		"/C/Users/Абоба/Desktop/wertqdcf/html/index.html",
+		"/C/Users/Абоба/Desktop/wertqdcf/css/contact_style.css",
+		"/C/Users/Абоба/Desktop/HTML/contact.html",
+		"/C/Users/Абоба/Desktop/HTML/css/layout.css",
+		"/C/Users/Абоба/Desktop/HTML/index.html",
+		"/C/Users/Абоба/Desktop/HTML/css/animate.css"
+	],
+	"find":
+	{
+		"height": 32.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"k",
+			"x",
+			"make",
+			"start",
+			"rightAnswer",
+			"hiddenPosition",
+			"rightAnswer",
+			"result",
+			"generateRandom",
+			"secondNumber",
+			"number1 ",
+			"firstNumber",
+			"secondNumber",
+			"firstNumber",
+			"calculateGCD",
+			"y",
+			"x",
+			"maxNumber",
+			"minNumber",
+			"minRange",
+			"''",
+			"'",
+			"rules",
+			"getRightAnwser",
+			"secondNumb",
+			"firstNumb",
+			"getNumber",
+			"width",
+			"min",
+			"max",
+			"min",
+			"max",
+			"min-w",
+			"min",
+			"float",
+			"align2",
+			"daun",
+			"upload",
+			"Border",
+			"Tokyo",
+			"Paris",
+			"London",
+			"<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores id aliquid consequatur, nemo, iure modi aut nostrum odio cupiditate eos veritatis suscipit tenetur, asperiores perspiciatis vel officia ipsum? Aperiam, numquam.</p>"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"abibas",
+			"ZXC",
+			"",
+			"run",
+			"launch",
+			"answer",
+			"hiddenIndex",
+			"answer",
+			"progression",
+			"getRandomNumber",
+			"number2",
+			"number1",
+			"number1 ",
+			"y",
+			"x",
+			"gcd",
+			"number2",
+			"number1",
+			"minRange",
+			"rule",
+			"findGCD",
+			"y",
+			"x",
+			"getRandomNumber",
+			"max-width",
+			"max",
+			"dn",
+			"TAB 3",
+			"TAB 2",
+			"TAB 1"
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 32.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "package.sublime-project",
+	"replace":
+	{
+		"height": 60.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 194.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
