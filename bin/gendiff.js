@@ -2,7 +2,7 @@
 import genDiff from '../src/genDiff';
 
 const { Command } = require('commander');
-const { default: genDiff } = require('../.github/src/genDiff');
+const { default: genDif } = require('../.github/src/genDiff');
 const program = new Command();
 
 program
