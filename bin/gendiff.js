@@ -1,8 +1,7 @@
 #!/usr/bin/env node
+import { Command } from 'commander';
 import genDiff from '../src/genDiff';
 
-const { Command } = require('commander');
-const { default: genDif } = require('../.github/src/genDiff');
 const program = new Command();
 
 program
