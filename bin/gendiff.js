@@ -1,12 +1,16 @@
 #!/usr/bin/env node
+import genDiff from '../src/genDiff';
+
 const { Command } = require('commander');
+const { default: genDiff } = require('../.github/src/genDiff');
 const program = new Command();
 
 program
-  .name('gendiff')
-  .arguments('<filepath1> <filepath2>')
+  .version('0.0.1', '-V, --version', 'output the version number')
+  .argument('<filepath1> <filepath2>')
   .description('Compares two configuration files and shows a difference.')
-  .version('1.1.1')
   .option('-f, --format [type]', 'output format')
-
+  .action((filepath1, filepath2) => {
+    console.log(genDiff(filepath1, filepath2));
+  });
 program.parse();  
