@@ -1,8 +1,0 @@
---2022-08-16 16:36:31--  https://github.com/git/git/archive/v2.28.0.zip
-Resolving github.com (github.com)... 140.82.121.3, 198.51.44.8, 198.51.45.8, ...
-Connecting to github.com (github.com)|140.82.121.3|:443... connected.
-HTTP request sent, awaiting response... 302 Found
-Location: https://codeload.github.com/git/git/zip/refs/tags/v2.28.0 [following]
---2022-08-16 16:36:31--  https://codeload.github.com/git/git/zip/refs/tags/v2.28.0
-Resolving codeload.github.com (codeload.github.com)... 127.0.0.1
-Connecting to codeload.github.com (codeload.github.com)|127.0.0.1|:443... failed: Connection refused.
