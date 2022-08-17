@@ -14,7 +14,7 @@
     "gendiff": "bin/gendiff.js"
   },
   "repository": {
-    "type": "git",
+    "type": "module",
     "url": "git+https://github.com/Skeler667/frontend-project-lvl2.git"
   },
   "author": "",
