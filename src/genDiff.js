@@ -8,5 +8,6 @@ const data2 = readFileSync(path.resolve('__fixtures__', filepath2), 'utf-8')
 
 const parse1 = JSON.parse(data1)
 const parse2 = JSON.parse(data2)
-console.log(parse1, parse2);
+console.log(parse1);
+console.log(parse2);
 };
