@@ -4,20 +4,27 @@ import * as path from 'path';
 import _ from 'lodash'
 
 const genDiff = (data1, data2) => {
+    const trueKey = '+';
+    const falseKey = '-';
+    const nothingKey = '';
     const keys = _.union(Object.keys(data1), Object.keys(data2));
-    const result = {};
+
+    let result = '{\n }';
     for (const key of keys) {
         if (data1[key] == data2[key]) { 
-            result[key] = data1[key] + '';
+            result += `\n ${nothingKey} ${key + ':'} ${data1[key]}\n`;
         } 
         else if (data1.key !== data2[key]) {
-            result[key] = '+';
+            result += `${trueKey} ${key + ':'} ${data1[key]}\n`;
+
         } else if (data2[key] !== data1[key]){
-            result[key] = '-';
+            result += `${falseKey} ${key + ':'} ${data1[key]}\n`;
+
         } else {
-            result[key] = '+';
+            result += `${trueKey} ${key + ':'} ${data1[key]}\n`;
         }
     }
+    console.log(result)
     return result;
   };
 

@@ -1,6 +1,4 @@
 import  genDiff  from '../src/genDiff';
-import { readFileSync } from 'fs';
-import * as path from 'path';
 import _ from 'lodash'
 
 
