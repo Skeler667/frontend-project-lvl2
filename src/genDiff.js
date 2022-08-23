@@ -11,11 +11,11 @@ const genDiff = (data1, data2) => {
     const sorted = keys.sort();
     let result = '';
     for (const key of keys) {
-        if (_.has(data1, key)) {
-            result += `  ${trueKey} ${key + ':'} ${data1[key]}\n`;
+        if (!_.has(data1, key)) {
+            result += `  ${trueKey} ${key + ':'} ${data2[key]}\n`;
         }
-        if (_.has(data2, key)) {
-            result += `  ${falseKey} ${key + ':'} ${data2[key]}\n`;
+        if (!_.has(data2, key)) {
+            result += `  ${falseKey} ${key + ':'} ${data1[key]}\n`;
         }
         if (data1[key] !== data2[key]) { 
             result += `   ${trueKey} ${key + ':'} ${data1[key]}\n`;
