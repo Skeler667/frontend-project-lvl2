@@ -8,24 +8,25 @@ const genDiff = (data1, data2) => {
     const falseKey = '-';
     const nothingKey = '';
     const keys = _.union(Object.keys(data1), Object.keys(data2));
-
-    let result = '{\n }';
+    const sorted = keys.sort();
+    let result = '';
     for (const key of keys) {
-        if (data1[key] == data2[key]) { 
-            result += `\n ${nothingKey} ${key + ':'} ${data1[key]}\n`;
-        } 
-        else if (data1.key !== data2[key]) {
-            result += `${trueKey} ${key + ':'} ${data1[key]}\n`;
+        console.log(data1.key);
+        if (data1[key] === data2[key] ) { 
+            result += `   ${nothingKey} ${key + ':'} ${data1[key]}\n`;
+        }
+        else if (data1[key] !== data2[key] ) {
+            result += `  ${falseKey} ${key + ':'} ${data1[key]}\n`;
 
-        } else if (data2[key] !== data1[key]){
-            result += `${falseKey} ${key + ':'} ${data1[key]}\n`;
+        } else if (data2[key] !== data1[key]) {
+            result += `  ${falseKey} ${key + ':'} ${data1[key]}\n`;
 
         } else {
-            result += `${trueKey} ${key + ':'} ${data1[key]}\n`;
+            result += ` ${trueKey} ${key + ':'} ${data1[key]}\n`;
         }
     }
     console.log(result)
-    return result;
+    return '{\n' + result + '}';
   };
 
 export default (filepath1, filepath2) => {
