@@ -10,26 +10,24 @@ const genDiff = (data1, data2) => {
     const keys = _.union(Object.keys(data1), Object.keys(data2));
     console.log(keys);
     const sorted = keys.sort();
-    let result = '';
+    // let result = '';
 // console.log(sorted);
-    for (const key of sorted) {
-    //     
-        if (!_.has(data1, key)) {
-            result += `  ${trueKey} ${key}: ${data2[key]}\n`;
-        }
-        if (!_.has(data2, key)) {
-            result += `  ${falseKey} ${key}: ${data1[key]}\n`;
-        }
-        if (data1[key] !== data2[key]) { 
-            result += `${falseKey} ${key}: ${data2[key]}\n`;
-            result += `${trueKey} ${key}: ${data1[key]}\n`;
-        }
-        if (data1[key] === data2[key] ) {
-            result += `${nothingKey}    ${key}: ${data2[key]}\n`;
-        }
+    const keyMap = sorted.map((key) => {
+    if (!_.has(data1, key)) {
+        return `  ${trueKey} ${key}: ${data2[key]}`;
     }
-     console.log(result)
-    return '{\n' + result + '}';
+    if (!_.has(data2, key)) {
+        return `  ${falseKey} ${key}: ${data1[key]}`;
+    }
+    if (data1[key] !== data2[key]) { 
+        return`  ${trueKey} ${key}: ${data1[key]}`;
+    }
+    if (data1[key] === data2[key] ) {
+        return `   ${nothingKey} ${key}: ${data1[key]}`;
+    }} );
+    const joinStr = keyMap.join('\n');
+    console.log(`{\n' + ${joinStr} + '\n}`)
+    return `{\n' + ${joinStr} + '\n}`;
   };
 
 export default (filepath1, filepath2) => {
