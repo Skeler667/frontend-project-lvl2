@@ -4,30 +4,27 @@ import * as path from 'path';
 import _ from 'lodash'
 
 const genDiff = (data1, data2) => {
-    const trueKey = '+';
-    const falseKey = '-';
-    const nothingKey = '';
     const keys = _.union(Object.keys(data1), Object.keys(data2));
-    console.log(keys);
     const sorted = keys.sort();
-    // let result = '';
-// console.log(sorted);
-    const keyMap = sorted.map((key) => {
+    console.log(sorted);
+    const keyMap = sorted.flatMap((key) => {
     if (!_.has(data1, key)) {
-        return `  ${trueKey} ${key}: ${data2[key]}`;
+        return `  + ${key}: ${data2[key]}`;
     }
     if (!_.has(data2, key)) {
-        return `  ${falseKey} ${key}: ${data1[key]}`;
+        return `  - ${key}: ${data1[key]}`;
     }
     if (data1[key] !== data2[key]) { 
-        return`  ${trueKey} ${key}: ${data1[key]}`;
+        const diff1 = `  - ${key}: ${data1[key]}`;
+        const diff2 = `  + ${key}: ${data2[key]}`;
+        return [diff1, diff2];
     }
     if (data1[key] === data2[key] ) {
-        return `   ${nothingKey} ${key}: ${data1[key]}`;
+        return `    ${key}: ${data1[key]}`;
     }} );
     const joinStr = keyMap.join('\n');
-    console.log(`{\n' + ${joinStr} + '\n}`)
-    return `{\n' + ${joinStr} + '\n}`;
+    console.log(`{\n${joinStr}\n}`)
+    return `{\n${joinStr}\n}`;
   };
 
 export default (filepath1, filepath2) => {

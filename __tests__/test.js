@@ -10,6 +10,5 @@ test('result', () => {
   - timeout: 50
   + timeout: 20
   + verbose: true
-}
-    `);
+}`);
   });
