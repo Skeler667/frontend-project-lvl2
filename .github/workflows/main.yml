@@ -16,7 +16,7 @@ jobs:
     
       - name: Run a linter
         run: |
-          make install
+          npm install
           make lint
 
   test: 
