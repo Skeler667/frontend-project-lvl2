@@ -15,15 +15,17 @@ jobs:
     steps:
     
       - name: Run a linter
-        run: npm install ci
-        run: npm publish --dry-run
-        run: npx eslint  .
+          run: console.log(1);
+        # run: npm install ci
+        # run: npm publish --dry-run
+        # run: npx eslint  .
 
   test: 
     runs-on: ubuntu-latest
 
     steps:
       - name: Run a test
-        run: npm install ci
-        run: npm publish --dry-run
-        run: npm test
+          run: console.log(2);
+        # run: npm install ci
+        # run: npm publish --dry-run
+        # run: npm test
