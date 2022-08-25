@@ -15,7 +15,7 @@ jobs:
     steps:
     
       - name: Run a linter
-          run: console.log(1);
+        run: console.log(1);
         # run: npm install ci
         # run: npm publish --dry-run
         # run: npx eslint  .
@@ -25,7 +25,7 @@ jobs:
 
     steps:
       - name: Run a test
-          run: console.log(2);
+        run: console.log(2);
         # run: npm install ci
         # run: npm publish --dry-run
         # run: npm test
