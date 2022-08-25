@@ -16,9 +16,8 @@ jobs:
     
       - name: Run a linter
         run: |
-          npm install ci
-          npm publish --dry-run
-          npx eslint  .
+          make install
+          make lint
 
   test: 
     runs-on: ubuntu-latest
