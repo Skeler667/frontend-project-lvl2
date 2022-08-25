@@ -1,5 +1,9 @@
 install:
 	npm install ci
+lint:
+	npx eslint  .
+fix:
+	npx eslint --fix .
 publish:
 	npm publish --dry-run
 gendiff:
