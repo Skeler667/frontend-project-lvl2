@@ -9,4 +9,4 @@ gendiff:
 test:
 	npm test
 hello:
-console.log('Hello!');
+	console.log('Hello!');
