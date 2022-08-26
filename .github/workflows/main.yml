@@ -1,30 +1,18 @@
-#  Start tests and linter
-
-name: Test-and-linter
-
-# Controls when the workflow will run
-on:
-  push:
-
-
-
+name: hello-world
+# on – определяет события, которые запускают воркфлоу
+on: push
 jobs:
-  linter: 
+  # build – произвольно выбранное имя задания
+  # их может быть больше одного
+  build:
+    # операционная система для работы воркфлоу
     runs-on: ubuntu-latest
-
-    steps:
-    
-      - name: Run a linter
-        run: |
-          npm install
-          make lint
-
-  test: 
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Run a test
-        run: console.log(2);
-        # run: npm install ci
-        # run: npm publish --dry-run
-        # run: npm test
+    steps: # список шагов, которые надо выполнить
+      # checkout – клонирует репозиторий
+      - uses: actions/checkout@v2
+      # run – произвольная bash-команда
+      # ls -la выведет содержимое текущего репозитория
+      - run: |
+      ls -la
+      install make
+      make hello

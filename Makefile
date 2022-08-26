@@ -12,3 +12,5 @@ test:
 	npm test
 lint:
 	npx eslint .
+hello:
+console.log('Hello!');
