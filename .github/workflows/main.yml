@@ -1,4 +1,4 @@
-name: test
+name: test-and-linter
 # on – определяет события, которые запускают воркфлоу
 on: push
 jobs:
@@ -13,3 +13,4 @@ jobs:
       # run – произвольная bash-команда
       # ls -la выведет содержимое текущего репозитория
       - run: make test
+      - run: make lint
