@@ -19,3 +19,12 @@ jobs:
     steps: # список шагов, которые надо выполнить
       - uses: actions/checkout@v2
       - run: make test
+
+
+  linter:
+    # операционная система для работы воркфлоу
+    runs-on: ubuntu-latest
+    needs: [test]
+    steps: # список шагов, которые надо выполнить
+      - uses: actions/checkout@v2
+      - run: make lint
