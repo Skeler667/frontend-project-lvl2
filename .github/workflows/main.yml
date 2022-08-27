@@ -9,7 +9,4 @@ jobs:
     runs-on: ubuntu-latest
     steps: # список шагов, которые надо выполнить
       - uses: actions/checkout@v2
-      - run: |
-        make install
-        make test
-        make gendiff
+      - run: make install
