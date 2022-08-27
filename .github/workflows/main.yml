@@ -4,9 +4,18 @@ on: push
 jobs:
   # build – произвольно выбранное имя задания
   # их может быть больше одного
-  build:
+  install:
     # операционная система для работы воркфлоу
     runs-on: ubuntu-latest
     steps: # список шагов, которые надо выполнить
       - uses: actions/checkout@v2
       - run: make install
+
+
+    test:
+    # операционная система для работы воркфлоу
+    runs-on: ubuntu-latest
+    needs: [install]
+    steps: # список шагов, которые надо выполнить
+      - uses: actions/checkout@v2
+      - run: make test
