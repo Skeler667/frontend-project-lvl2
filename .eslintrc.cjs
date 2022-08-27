@@ -5,11 +5,21 @@ module.exports = {
   },
   extends: 'airbnb-base',
   overrides: [
+    {
+      "files": [
+        "**/*.spec.js",
+        "**/*.spec.jsx"
+      ],
+      "env": {
+        "jest": true
+      }
+    }
   ],
   parserOptions: {
     ecmaVersion: 'latest',
     sourceType: 'module',
   },
   rules: {
+    
   },
 };
