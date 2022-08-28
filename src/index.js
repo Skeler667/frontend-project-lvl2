@@ -18,7 +18,7 @@ const genDiff = (data1, data2) => {
       const diff2 = `  + ${key}: ${data2[key]}`;
       return [diff1, diff2];
     }
-    return `    ${key}: ${data1[key]}`;
+      return `    ${key}: ${data1[key]}`;
   });
   const joinStr = keyMap.join('\n');
   return `{\n${joinStr}\n}`;
