@@ -1,4 +1,4 @@
-name: hello-world
+name: Test-and-lint
 # on – определяет события, которые запускают воркфлоу
 on: push
 jobs:
