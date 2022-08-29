@@ -20,6 +20,7 @@ module.exports = {
     sourceType: 'module',
   },
   rules: {
-    
-  },
+    'no-console': 0,
+    'import/extensions': 0,
+},
 };
