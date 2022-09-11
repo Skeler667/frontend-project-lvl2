@@ -2,8 +2,9 @@
 import { readFileSync } from 'fs';
 import * as path from 'path';
 import _ from 'lodash';
+import parser from '../module_parse/parse.js';
 
-const genDiff = (data1, data2) => {
+const compare = (data1, data2) => {
   const keys = _.union(Object.keys(data1), Object.keys(data2));
   const sorted = keys.sort();
   const keyMap = sorted.flatMap((key) => {
@@ -25,13 +26,14 @@ const genDiff = (data1, data2) => {
 };
 
 export default (filepath1, filepath2) => {
+  const format1 = path.extname(filepath1).slice(1);
+  const format2 = path.extname(filepath2).slice(1);
   const data1 = readFileSync(path.resolve('__fixtures__', filepath1), 'utf-8');
   const data2 = readFileSync(path.resolve('__fixtures__', filepath2), 'utf-8');
-
-  const parseData1 = JSON.parse(data1);
-  const parseData2 = JSON.parse(data2);
-
-  return genDiff(parseData1, parseData2);
+  // console.log(data1);
+  const dataParse1 = parser(data1, format1);
+  const dataParse2 = parser(data2, format2);
+  return compare(dataParse1, dataParse2);
 };
 
-export { genDiff };
+export { compare };
