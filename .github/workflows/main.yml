@@ -3,7 +3,7 @@ name: Test-and-lint
 on: push
 env:
   CC_TEST_REPORTER_ID: ${{ secrets.CC_TEST_REPORTER_ID }}
-jobs:dependince
+jobs:
   # build – произвольно выбранное имя задания
   # их может быть больше одного
   install:
