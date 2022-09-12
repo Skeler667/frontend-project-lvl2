@@ -1,5 +1,7 @@
 install:
 	npm install ci
+dependince:
+	npm ci
 lint:
 	npx eslint  .
 publish:
