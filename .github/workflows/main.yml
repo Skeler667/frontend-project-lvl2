@@ -1,6 +1,8 @@
 name: Test-and-lint
 # on – определяет события, которые запускают воркфлоу
 on: push
+env:
+  CC_TEST_REPORTER_ID: ${{ secrets.CC_TEST_REPORTER_ID }}
 jobs:
   # build – произвольно выбранное имя задания
   # их может быть больше одного
