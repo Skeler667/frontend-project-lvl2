@@ -1,7 +1,7 @@
-import {
-  expect, test,
-} from '@jest/globals';
-import main from '../src/index';
+// import {
+//   expect, test,
+// } from '@jest/globals';
+import main from '../src/index.js';
 
 test('json parse', () => {
   expect(main('../__fixtures__/file1.json', '../__fixtures__/file2.json')).toEqual(`{
