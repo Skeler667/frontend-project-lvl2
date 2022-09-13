@@ -8,5 +8,5 @@ gendiff:
 	node bin/gendiff.js
 test:
 	npm test
-hello:
-	console.log('Hello!');
+test-coverage:
+	npm test -- --coverage --coverageProvider=v8

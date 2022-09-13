@@ -1,6 +1,6 @@
-// import {
-//   expect, test,
-// } from '@jest/globals';
+import {
+  expect, test,
+} from '@jest/globals';
 import main from '../src/index.js';
 
 test('json parse', () => {
