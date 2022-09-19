@@ -15,4 +15,4 @@ const genDiff = (filepath1, filepath2) => {
   return astTree;
 };
 
-export default genDiff; 
+export default genDiff;
