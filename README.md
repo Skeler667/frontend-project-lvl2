@@ -32,22 +32,22 @@ npm link
 ```
 gendiff -h
 ```
-![image](https://user-images.githubusercontent.com/85356853/191842126-0caadf00-10f7-4b2f-9520-362aa6751aa9.png)
+![image](https://user-images.githubusercontent.com/85356853/191843809-ab735168-f472-43bd-bfc1-54b9bdf17941.png)
 
 ### Пример работы со стандартным форматером Stylish:
 ```
 gendiff __fixtures__/file1.json __fixtures__/file2.yaml
 ```
-![image](https://user-images.githubusercontent.com/85356853/191842648-209eeb85-2ceb-4acc-9cb8-6a8044dc8ac5.png)
+![image](https://user-images.githubusercontent.com/85356853/191843929-4d10119a-5974-4d5b-8045-3e3d9d1717fa.png)
 
 ### Пример работы с форматером Plain:
 ```
 gendiff -f plain __fixtures__/file1.json __fixtures__/file2.yaml
 ```
-![image](https://user-images.githubusercontent.com/85356853/191843076-e516baed-df68-4314-a395-6a4e1e4961a7.png)
+![image](https://user-images.githubusercontent.com/85356853/191844066-66166c06-4a07-4a68-bc81-eb614b6210e6.png)
 
 ### Пример работы с форматером JSON
 ```
 gendiff -f json __fixtures__/file1.json __fixtures__/file2.yaml
 ```
-![image](https://user-images.githubusercontent.com/85356853/191843228-da07b6cb-08e2-42a6-939e-d5c36977b06d.png)
+![image](https://user-images.githubusercontent.com/85356853/191844128-5bced93c-36ec-4846-9fc4-e718a1a3e854.png)
