@@ -6,7 +6,7 @@
 ### Tests and linter status:
 [![Test-and-linter](https://github.com/Skeler667/frontend-project-lvl2/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/Skeler667/frontend-project-lvl2/actions/workflows/main.yml)
 
-## Вычислитель отличий :collision:
+## Вычислитель отличий :cyclone:
 
 ### Краткое описание: :page_facing_up:
 
