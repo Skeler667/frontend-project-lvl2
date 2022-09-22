@@ -7,8 +7,8 @@ export default (diffTree, format) => {
       return stylish(diffTree);
     case 'plain':
       return plain(diffTree);
-      case 'json':
-        return JSON.stringify(diffTree);
+    case 'json':
+      return JSON.stringify(diffTree);
     default:
       return new Error(`Type ${format} not supported`);
   }
