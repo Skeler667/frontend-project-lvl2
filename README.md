@@ -5,3 +5,4 @@
 [![Test Coverage](https://api.codeclimate.com/v1/badges/fdfec1f5969ded9b72bd/test_coverage)](https://codeclimate.com/github/Skeler667/frontend-project-lvl2/test_coverage)
 ### Tests and linter status:
 [![Test-and-linter](https://github.com/Skeler667/frontend-project-lvl2/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/Skeler667/frontend-project-lvl2/actions/workflows/main.yml)
+asdasdasdasd
