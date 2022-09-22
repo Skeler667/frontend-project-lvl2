@@ -1,5 +1,5 @@
 ### Hexlet tests:
-[![Actions Status](https://github.com/Skeler667/frontend-project-lvl2/workflows/hexlet-check/badge.svg)](https://github.com/ArsenyKonkolovich/backend-project-lvl2/actions) 
+[![Actions Status](https://github.com/Skeler667/frontend-project-lvl2/workflows/hexlet-check/badge.svg)](https://github.com/Skeler667/frontend-project-lvl2/actions) 
 ### Codeclimate Maintainability and Test Coverage:
 [![Maintainability](https://api.codeclimate.com/v1/badges/fdfec1f5969ded9b72bd/maintainability)](https://codeclimate.com/github/Skeler667/frontend-project-lvl2/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/fdfec1f5969ded9b72bd/test_coverage)](https://codeclimate.com/github/Skeler667/frontend-project-lvl2/test_coverage)
