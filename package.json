@@ -1,9 +1,8 @@
 {
   "dependencies": {
-    "commander": "^9.4.0",
-    "js-yaml": "^4.1.0",
-    "lodash": "^4.17.15",
-    "make": "^0.8.1"
+    "commander": "9.4.0",
+    "js-yaml": "4.1.0",
+    "lodash": "4.17.15"
   },
   "name": "@hexlet/code",
   "description": "Difference Calculator",
