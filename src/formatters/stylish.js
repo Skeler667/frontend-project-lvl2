@@ -1,5 +1,4 @@
 import _ from 'lodash';
-// import buildTree from './buildTree.js';
 
 const indent = (depth, spacesCount = 4) => ' '.repeat(depth * spacesCount - 2);
 
@@ -26,7 +25,7 @@ const stylish = (diff) => {
       case 'changed':
         return `${indent(depth)}- ${node.key}: ${formatValue(node.value1, depth + 1)}\n${indent(depth)}+ ${node.key}: ${formatValue(node.value2, depth + 1)}`;
       case 'nested':
-        return `${indent(depth)}  ${node.key}: {\n${iter(node.value, depth + 1).join('\n')}\n${indent(depth)}  }`;
+        return `${indent(depth)}  ${node.key}: {\n${iter(node.children, depth + 1).join('\n')}\n${indent(depth)}  }`;
       default:
         return new Error('This tree is bad. Try another tree');
     }

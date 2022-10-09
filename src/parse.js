@@ -9,6 +9,6 @@ export default (data, format) => {
     case 'yaml':
       return yaml.load(data);
     default:
-      throw new Error(`${format} is unknown`);
+      throw new Error(`${format} is unknown format for parser`);
   }
 };

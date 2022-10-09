@@ -27,7 +27,7 @@ export default (diff) => {
         case 'changed':
           return `Property '${path}' was updated. From ${getComplexValue(node.value1)} to ${getComplexValue(node.value2)}`;
         case 'nested':
-          return `${iter(node.value, [path])}`;
+          return `${iter(node.children, [path])}`;
         default:
           return new Error('This tree is bad. Try another tree');
       }

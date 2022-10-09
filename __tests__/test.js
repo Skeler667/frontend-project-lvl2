@@ -1,5 +1,5 @@
 import {
-  expect, test,
+  expect, test, describe,
 } from '@jest/globals';
 import { readFileSync } from 'node:fs';
 import { fileURLToPath } from 'url';
@@ -13,13 +13,17 @@ const resultStylish = readFileSync(getFixturePath('stylish.txt'), 'utf-8');
 const resultPlain = readFileSync(getFixturePath('plain.txt'), 'utf-8');
 const resultJson = readFileSync(getFixturePath('formatJson.txt'), 'utf-8');
 
-test(('stylish'), () => {
-  expect(genDiff(getFixturePath('file1.json'), getFixturePath('file2.json'))).toBe(resultStylish);
-  expect(genDiff(getFixturePath('file1.yaml'), getFixturePath('file2.yaml'), 'stylish')).toEqual(resultStylish);
-});
-test(('plain'), () => {
-  expect(genDiff(getFixturePath('file1.json'), getFixturePath('file2.json'), 'plain')).toBe(resultPlain);
-});
-test(('json'), () => {
-  expect(genDiff(getFixturePath('file1.json'), getFixturePath('file2.json'), 'json')).toBe(resultJson);
+describe('module test', () => {
+  test('should be work with json', () => {
+    expect(genDiff(getFixturePath('file1.json'), getFixturePath('file2.json'), 'stylish')).toEqual(resultStylish);
+    expect(genDiff(getFixturePath('file1.json'), getFixturePath('file2.json'))).toBe(resultStylish);
+    expect(genDiff(getFixturePath('file1.json'), getFixturePath('file2.json'), 'plain')).toBe(resultPlain);
+    expect(genDiff(getFixturePath('file1.json'), getFixturePath('file2.json'), 'json')).toBe(resultJson);
+  });
+  test('should be work with yaml', () => {
+    expect(genDiff(getFixturePath('file1.yaml'), getFixturePath('file2.yaml'), 'stylish')).toEqual(resultStylish);
+    expect(genDiff(getFixturePath('file1.yaml'), getFixturePath('file2.yaml'))).toBe(resultStylish);
+    expect(genDiff(getFixturePath('file1.yaml'), getFixturePath('file2.yaml'), 'plain')).toBe(resultPlain);
+    expect(genDiff(getFixturePath('file1.yaml'), getFixturePath('file2.yaml'), 'json')).toBe(resultJson);
+  });
 });
