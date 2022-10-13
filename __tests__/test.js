@@ -13,7 +13,7 @@ const resultStylish = readFileSync(getFixturePath('stylish.txt'), 'utf-8');
 const resultPlain = readFileSync(getFixturePath('plain.txt'), 'utf-8');
 const resultJson = readFileSync(getFixturePath('formatJson.txt'), 'utf-8');
 
-describe('module test', () => {
+describe('genDiff App', () => {
   test('should be work with json', () => {
     expect(genDiff(getFixturePath('file1.json'), getFixturePath('file2.json'), 'stylish')).toEqual(resultStylish);
     expect(genDiff(getFixturePath('file1.json'), getFixturePath('file2.json'))).toBe(resultStylish);
@@ -27,3 +27,4 @@ describe('module test', () => {
     expect(genDiff(getFixturePath('file1.yaml'), getFixturePath('file2.yaml'), 'json')).toBe(resultJson);
   });
 });
+// toTrow

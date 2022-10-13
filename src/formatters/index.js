@@ -1,14 +1,14 @@
 import stylish from './stylish.js';
 import plain from './plain.js';
 
-export default (diffTree, format) => {
+export default (buildTree, format) => {
   switch (format) {
     case 'stylish':
-      return stylish(diffTree);
+      return stylish(buildTree);
     case 'plain':
-      return plain(diffTree);
+      return plain(buildTree);
     case 'json':
-      return JSON.stringify(diffTree);
+      return JSON.stringify(buildTree);
     default:
       return new Error(`Type ${format} not supported`);
   }

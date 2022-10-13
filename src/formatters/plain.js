@@ -34,5 +34,5 @@ export default (diff) => {
     });
     return _.compact(result).join('\n');
   };
-  return iter(diff, []);
+  return iter(diff.children, []);
 };
