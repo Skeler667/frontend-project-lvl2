@@ -27,4 +27,3 @@ describe('genDiff App', () => {
     expect(genDiff(getFixturePath('file1.yaml'), getFixturePath('file2.yaml'), 'json')).toBe(resultJson);
   });
 });
-// toTrow

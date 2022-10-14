@@ -14,5 +14,4 @@ const genDiff = (filepath1, filepath2, outputFormat = 'stylish') => {
   const tree = buildTree(data1, data2);
   return format(tree, outputFormat);
 };
-
 export default genDiff;
