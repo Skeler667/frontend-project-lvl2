@@ -2,15 +2,12 @@ import _ from 'lodash';
 
 const indent = (depth, spacesCount = 4) => ' '.repeat(depth * spacesCount - 2);
 
-const stringify = (value, depth) => {
-  if (!_.isObject(value)) {
-    return String(value);
+const stringify = (data, depth, render) => {
+  if (!_.isObject(data)) {
+    return String(data);
   }
-  const formatedString = Object.entries(value).map(([key, innerValue]) => {
-    const object = { key, value: innerValue };
-    return `${indent(depth)}  ${object.key}: ${stringify(object.value, depth + 1)}`;
-  });
-  return `{\n${formatedString.join('\n')}\n${indent(depth - 1)}  }`;
+  const output = Object.entries(data).map(([key, value]) => render({ type: 'unchanged', key, value }, depth + 1));
+  return `{\n${output.join('\n')}\n${indent(depth)}  }`;
 };
 
 const render = (node, depth) => {
@@ -20,28 +17,26 @@ const render = (node, depth) => {
       return `{\n${output.join('\n')}\n}`;
     }
     case 'added': {
-      return `${indent(depth)}+ ${node.key}: ${stringify(node.value, depth + 1)}`;
+      return `${indent(depth)}+ ${node.key}: ${stringify(node.value, depth, render)}`;
     }
     case 'removed': {
-      return `${indent(depth)}- ${node.key}: ${stringify(node.value, depth + 1)}`;
+      return `${indent(depth)}- ${node.key}: ${stringify(node.value, depth, render)}`;
     }
     case 'unchanged': {
-      return `${indent(depth)}  ${node.key}: ${stringify(node.value, depth + 1)}`;
+      return `${indent(depth)}  ${node.key}: ${stringify(node.value, depth, render)}`;
     }
     case 'changed': {
-      const output1 = `${indent(depth)}- ${node.key}: ${stringify(node.value1, depth + 1)}`;
-      const input1 = `${indent(depth)}+ ${node.key}: ${stringify(node.value2, depth + 1)}`;
-      return `${output1}\n${input1}`;
+      const output1 = `${indent(depth)}- ${node.key}: ${stringify(node.value1, depth, render)}`;
+      const output2 = `${indent(depth)}+ ${node.key}: ${stringify(node.value2, depth, render)}`;
+      return `${output1}\n${output2}`;
     }
     case 'nested': {
-      const output2 = node.children.map((children) => render(children, depth + 1));
-      return `${indent(depth)}  ${node.key}: {\n${output2.join('\n')}\n${indent(depth)}  }`;
+      const output = node.children.map((children) => render(children, depth + 1));
+      return `${indent(depth)}  ${node.key}: {\n${output.join('\n')}\n${indent(depth)}  }`;
     }
     default:
       return new Error('This tree is bad. Try another tree');
   }
 };
 
-const stylish = (tree) => render(tree, 0);
-
-export default stylish;
+export default (tree) => render(tree, 0);
