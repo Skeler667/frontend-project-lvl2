@@ -10,9 +10,11 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 const getFixturePath = (filename) => path.join(__dirname, '..', '__fixtures__', filename);
 
-const resultStylish = readFileSync(getFixturePath('stylish.txt'), 'utf-8');
-const resultPlain = readFileSync(getFixturePath('plain.txt'), 'utf-8');
-const resultJson = readFileSync(getFixturePath('formatJson.txt'), 'utf-8');
+const readFixtures = (fixtures) => readFileSync(getFixturePath(fixtures), 'utf-8');
+
+const resultStylish = readFixtures('stylish.txt');
+const resultPlain = readFixtures('plain.txt');
+const resultJson = readFixtures('formatJson.txt');
 
 describe('genDiff App', () => {
   test('should be work with json', () => {

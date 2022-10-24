@@ -10,25 +10,28 @@ const stringify = (value) => {
   return String(value);
 };
 
-const iter = (tree, acc) => {
-  const result = tree.map((node) => {
-    const path = [...acc, node.key].join('.');
+const getPropertyName = (properties, property) => [...properties, property].join('.');
+
+const render = (node, properties) => {
     switch (node.type) {
+      case 'root': {
+        const output = node.children.flatMap((child) => render(child, properties));
+        return output.join('\n');
+      }
       case 'added':
-        return `Property '${path}' was added with value: ${stringify(node.value)}`;
+        return `Property '${getPropertyName(properties, node.key)}' was added with value: ${stringify(node.value)}`;
       case 'removed':
-        return `Property '${path}' was removed`;
+        return `Property '${getPropertyName(properties, node.key)}' was removed`;
       case 'unchanged':
-        return null;
+        return [];
       case 'changed':
-        return `Property '${path}' was updated. From ${stringify(node.value1)} to ${stringify(node.value2)}`;
+        return `Property '${getPropertyName(properties, node.key)}' was updated. From ${stringify(node.value1)} to ${stringify(node.value2)}`;
       case 'nested':
-        return `${iter(node.children, [path])}`;
+          const output = node.children.flatMap((child) => render(child, properties));
+          return output.join('\n');
       default:
-        return new Error('This tree is bad. Try another tree');
+        throw new Error('This tree is bad. Try another tree');
     }
-  });
-  return _.compact(result).join('\n');
 };
 
-export default (diff) => iter(diff.children, []);
+export default (tree) => render(tree, []);
