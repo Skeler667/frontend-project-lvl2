@@ -13,25 +13,26 @@ const stringify = (value) => {
 const getPropertyName = (properties, property) => [...properties, property].join('.');
 
 const render = (node, properties) => {
-    switch (node.type) {
-      case 'root': {
-        const output = node.children.flatMap((child) => render(child, properties));
-        return output.join('\n');
-      }
-      case 'added':
-        return `Property '${getPropertyName(properties, node.key)}' was added with value: ${stringify(node.value)}`;
-      case 'removed':
-        return `Property '${getPropertyName(properties, node.key)}' was removed`;
-      case 'unchanged':
-        return [];
-      case 'changed':
-        return `Property '${getPropertyName(properties, node.key)}' was updated. From ${stringify(node.value1)} to ${stringify(node.value2)}`;
-      case 'nested':
-          const output = node.children.flatMap((child) => render(child, properties));
-          return output.join('\n');
-      default:
-        throw new Error('This tree is bad. Try another tree');
+  switch (node.type) {
+    case 'root': {
+      const output = node.children.flatMap((child) => render(child, properties));
+      return output.join('\n');
     }
+    case 'added':
+      return `Property '${getPropertyName(properties, node.key)}' was added with value: ${stringify(node.value)}`;
+    case 'removed':
+      return `Property '${getPropertyName(properties, node.key)}' was removed`;
+    case 'unchanged':
+      return [];
+    case 'changed':
+      return `Property '${getPropertyName(properties, node.key)}' was updated. From ${stringify(node.value1)} to ${stringify(node.value2)}`;
+    case 'nested': {
+      const output = node.children.flatMap((child) => render(child, [...properties, node.key]));
+      return output.join('\n');
+    }
+    default:
+      throw new Error(`Получен неизвестный тип узла ${node.type} из дерева ${node}`);
+  }
 };
 
 export default (tree) => render(tree, []);

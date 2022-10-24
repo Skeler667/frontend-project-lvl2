@@ -35,7 +35,7 @@ const render = (node, depth) => {
       return `${indent(depth)}  ${node.key}: {\n${output.join('\n')}\n${indent(depth)}  }`;
     }
     default:
-      return new Error(`Получен неизвестный тип узла из дерева ${tree}`);
+      throw new Error(`Получен неизвестный тип узла ${node.type} из дерева ${node}`);
   }
 };
 
