@@ -10,7 +10,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 const getFixturePath = (filename) => path.join(__dirname, '..', '__fixtures__', filename);
 
-const readFixtures = (fixtures) => readFileSync(getFixturePath(fixtures), 'utf-8');
+const readFixtures = (filepath) => readFileSync(getFixturePath(filepath), 'utf-8');
 
 const resultStylish = readFixtures('stylish.txt');
 const resultPlain = readFixtures('plain.txt');

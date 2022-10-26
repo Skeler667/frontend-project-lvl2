@@ -31,7 +31,7 @@ const render = (node, properties) => {
       return output.join('\n');
     }
     default:
-      throw new Error(`Получен неизвестный тип узла ${node.type} из дерева ${node}`);
+      throw new Error(`Unknown node type received ${node.type} from tree ${node}`);
   }
 };
 
